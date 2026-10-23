@@ -1,13 +1,24 @@
 [project]
 name = "bancada-smart-si"
 version = "0.1.0"
-description = "Add your description here"
+description = "O BancadaSmart é um ERP para assistências técnicas de smartphones desenvolvido em Python com Streamlit e PostgreSQL como projeto para a disciplina de Sistemas de Informação do Curso de Bacharelado em Ciência da Computação da UFAPE."
 readme = "README.md"
 authors = [
     { name = "João Francisco", email = "joaofrancisco.amello@gmail.com" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.11, <3.13"
+dependencies = [
+    "extra-streamlit-components>=0.1.81",
+    "fpdf2>=2.8.9",
+    "pydantic>=2.14.1",
+    "sqlalchemy>=2.1.6",
+    "streamlit>=1.66.1",
+    "streamlit-aggrid>=1.2.1.post2",
+    "streamlit-cookies-controller>=0.0.4",
+    "streamlit-option-menu>=0.4.0",
+    "streamlit-pydantic>=0.6.0",
+    "supabase>=2.33.0",
+]
 
 [project.scripts]
 bancada-smart-si = "bancada_smart_si:main"
